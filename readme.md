@@ -46,7 +46,7 @@ CREATE TABLE table_name (
     column1 datatype,
     column2 datatype,
     column3 datatype
-)
+);
 
 ## Show tables
 
@@ -54,7 +54,7 @@ SHOW tables;
 
 ## Delete/Drop a table
 
-DROP TABLE table_name
+DROP TABLE table_name;
 
 ## How to insert a single row into a table
 
@@ -116,7 +116,9 @@ SELECT * FROM table_name WHERE column_name LIKE 'v%';
 SELECT * FROM table_name WHERE column_name IN (values);
 
 ## How to create an index
-CREATE INDEX index_name ON table_name (column1, column2, ...);
+You can add multiple columns
+
+CREATE INDEX index_name ON table_name (column1);
 
 ## How to remove an index
 DROP INDEX index_name ON table_name;
